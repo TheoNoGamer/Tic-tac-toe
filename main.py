@@ -5,7 +5,7 @@ button_size = (6, 3)
 # Initialize the game board
 board = [
     ['', '', ''],
-    ['', 'o', ''],
+    ['', '', ''],
     ['', '', '']
 ]
 
@@ -42,7 +42,7 @@ while True:
     else:
         row, col = int(event[0]), int(event[1])
         if board[row - 1][col - 1] == '':
-            board[row - 1][col - 1] = 'o'
+            board[row - 1][col - 1] = ''
             window[event].update(board[row - 1][col - 1])
 
 window.close()
